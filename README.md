@@ -1,39 +1,46 @@
-Lab5Web - Praktikum 5: JavaScript Dasar dan Manipulasi HTML
+# Lab5Web - Praktikum 5: JavaScript Dasar dan Manipulasi HTML
 
-Data Mahasiswa
+<div align="center">
+  <p>Repositori ini memuat hasil pengerjaan <b>Praktikum 5: JavaScript Dasar</b> untuk mata kuliah Pemrograman Web.</p>
+  <p>Fokus utama praktikum ini adalah memahami sintaks dasar JavaScript, manipulasi DOM, interaksi form, serta logika percabangan dan perulangan.</p>
+</div>
 
-Nama              : Satrio Erlangga
+<hr>
 
-NIM                : 312510006
+## Data Mahasiswa
 
-Kelas             : I253C
+> **Nama** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Satrio Erlangga  
+> **NIM** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: 312510006  
+> **Kelas** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: I253C  
+> **Program Studi**: Teknik Informatika  
+> **Mata Kuliah** &nbsp;&nbsp;: Pemrograman Web  
+> **Dosen** &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: Agung Nugroho, S.Kom., M.Kom.
 
-Program Studi: Teknik Informatika
+<hr>
 
-Mata Kuliah   : Pemrograman Web
+## Langkah Kerja Praktikum
 
-Dosen            : Agung Nugroho, S.Kom., M.Kom.
-
-Langkah Kerja Praktikum
-
-Latihan 1: Menampilkan Output
-
+### Latihan 1: Menampilkan Output
 Langkah awal pengenalan JavaScript untuk memanipulasi teks pada elemen HTML berdasarkan ID dan menampilkan output melalui Console browser.
 
-Kode JavaScript:
-
+**Kode JavaScript:**
+```javascript
 document.getElementById("pesan").textContent = "Hello World";
 console.log("Hello World");
+```
+
+**Hasil Tampilan Halaman & Console:**
+<br>
+![Hasil Halaman](ss%201.png)
+<br>
+![Hasil Console](ss%203.png)
 
 
-Hasil Tampilan Halaman:
+### Latihan 2: Alert dan Prompt
+Penggunaan fungsi dialog bawaan browser. `prompt()` digunakan untuk meminta input pengguna, sedangkan `alert()` digunakan untuk menampilkan pesan *pop-up*.
 
-Latihan 2: Alert dan Prompt
-
-Penggunaan fungsi dialog bawaan browser. prompt() digunakan untuk meminta input pengguna, sedangkan alert() digunakan untuk menampilkan pesan pop-up sederhana.
-
-Kode JavaScript:
-
+**Kode JavaScript:**
+```javascript
 const namaPengguna = prompt("Masukkan nama Anda:", "");
 if (namaPengguna && namaPengguna.trim() !== "") {
     alert("Halo, " + namaPengguna + "!");
@@ -41,16 +48,22 @@ if (namaPengguna && namaPengguna.trim() !== "") {
 } else {
     alert("Nama belum diisi.");
 }
+```
+
+**Hasil Tampilan:**
+<br>
+![Prompt Nama](ss%202,1.png)
+<br>
+![Alert Halo](ss2,2.png)
+<br>
+![Hasil Teks Halaman](ss2,3.png)
 
 
-Hasil Tampilan:
+### Latihan 3: Function dan Operasi Aritmetika
+Membuat sebuah *function* yang menerima dua bilangan sebagai parameter untuk dihitung menggunakan berbagai operator aritmetika, lalu dicetak di Console.
 
-Latihan 3: Function dan Operasi Aritmetika
-
-Membuat sebuah function yang menerima dua bilangan sebagai parameter untuk dihitung menggunakan berbagai operator aritmetika, kemudian hasilnya dicetak di Console.
-
-Kode JavaScript:
-
+**Kode JavaScript:**
+```javascript
 function operasiDasar(a, b) {
     console.log("Penjumlahan:", a + b);
     console.log("Pengurangan:", a - b);
@@ -59,16 +72,18 @@ function operasiDasar(a, b) {
     console.log("Modulus:", a % b);
 }
 operasiDasar(9, 4);
+```
+
+**Hasil Tampilan Console:**
+<br>
+![Hasil Aritmetika](ss%203.png)
 
 
-Hasil Tampilan Console:
+### Latihan 4: Seleksi Kondisi (if-else)
+Penerapan logika percabangan menggunakan `if-else` untuk mengevaluasi apakah nilai yang dimasukkan memenuhi syarat kelulusan (>= 60) atau tidak.
 
-Latihan 4: Seleksi Kondisi (if-else)
-
-Penerapan logika percabangan menggunakan if-else untuk mengevaluasi apakah nilai yang dimasukkan (melalui prompt) memenuhi syarat kelulusan (>= 60) atau tidak.
-
-Kode JavaScript:
-
+**Kode JavaScript:**
+```javascript
 const inputNilai = prompt("Masukkan nilai (0-100):");
 const nilaiMahasiswa = Number(inputNilai);
 
@@ -79,16 +94,20 @@ if (inputNilai === null || inputNilai.trim() === "" || Number.isNaN(nilaiMahasis
 } else {
     alert("Belum lulus");
 }
+```
+
+**Hasil Tampilan:**
+<br>
+![Prompt Nilai](ss%204.png)
+<br>
+![Alert Lulus](ss%204,1.png)
 
 
-Hasil Tampilan:
+### Latihan 5: Seleksi Kondisi (switch)
+Penggunaan struktur percabangan `switch` untuk mengevaluasi suatu nilai yang memiliki banyak kasus spesifik secara efisien.
 
-Latihan 5: Seleksi Kondisi (switch)
-
-Penggunaan struktur percabangan switch sebagai alternatif dari if-else untuk mengevaluasi suatu nilai yang memiliki banyak kasus/pilihan spesifik.
-
-Kode JavaScript:
-
+**Kode JavaScript:**
+```javascript
 const inputPilihan = prompt("Masukkan angka 1-5:");
 switch (inputPilihan) {
     case "1": alert("Bilangan satu"); break;
@@ -98,16 +117,20 @@ switch (inputPilihan) {
     case "5": alert("Bilangan lima"); break;
     default: alert("Pilihan tidak tersedia");
 }
+```
+
+**Hasil Tampilan:**
+<br>
+![Prompt Switch](ss%205.png)
+<br>
+![Alert Switch](ss5,1.png)
 
 
-Hasil Tampilan:
+### Latihan 6: Form Bilangan Genap atau Ganjil
+Mengintegrasikan input form HTML dengan JavaScript untuk mendeteksi apakah angka yang dimasukkan pengguna merupakan bilangan genap atau ganjil.
 
-Latihan 6: Form Bilangan Genap atau Ganjil
-
-Mengintegrasikan input form HTML dengan JavaScript untuk mendeteksi apakah angka yang dimasukkan pengguna merupakan bilangan genap (habis dibagi dua) atau ganjil.
-
-Kode JavaScript:
-
+**Kode JavaScript:**
+```javascript
 function cekBilangan() {
     const input = document.getElementById("bilangan").value;
     const angka = Number(input);
@@ -121,29 +144,33 @@ function cekBilangan() {
         hasil.textContent = "Bilangan ganjil";
     }
 }
+```
+
+**Hasil Tampilan:**
+<br>
+![Form Genap Ganjil](ss%206.png)
 
 
-Hasil Tampilan:
+### Latihan 7: Mengubah Warna Halaman
+Memanipulasi CSS pada Document Object Model (DOM) HTML melalui fungsi interaktif berupa klik tombol.
 
-Latihan 7: Mengubah Warna Halaman
-
-Memanipulasi CSS/styling pada Document Object Model (DOM) HTML melalui fungsi interaktif berupa tombol.
-
-Kode JavaScript:
-
+**Kode JavaScript:**
+```javascript
 function ubahWarnaLatar(warna) {
     document.body.style.backgroundColor = warna;
 }
+```
+
+**Hasil Tampilan:**
+<br>
+![Warna Latar](ss%207.png)
 
 
-Hasil Tampilan:
+### Latihan 8: DOM dan Checkbox Menu Makanan
+Memanfaatkan *Event Listener* pada elemen Checkbox untuk mendeteksi perubahan status centang dan menjumlahkan total harga otomatis.
 
-Latihan 8: DOM dan Checkbox Menu Makanan
-
-Memanfaatkan Event Listener pada elemen Checkbox. Sistem akan mendeteksi setiap perubahan status centang dan menjumlahkan harga menu secara otomatis.
-
-Kode JavaScript:
-
+**Kode JavaScript:**
+```javascript
 const daftarMenu = document.querySelectorAll(".menu");
 daftarMenu.forEach((item) => {
     item.addEventListener("change", hitungTotal);
@@ -156,16 +183,20 @@ function hitungTotal() {
     });
     document.getElementById("total").textContent = total.toLocaleString("id-ID");
 }
+```
 
+**Hasil Tampilan:**
+<br>
+![Checkbox Makanan](ss%208.png)
 
-Hasil Tampilan:
+<hr>
 
-Mini Project: Kalkulator Nilai Mahasiswa
+## Mini Project: Kalkulator Nilai Mahasiswa
 
 Membuat kalkulator nilai yang menerima bobot Nilai Tugas (30%), UTS (30%), dan UAS (40%). Program menghitung nilai akhir, memberikan predikat huruf, dan status kelulusan.
 
-Kode Perhitungan JavaScript:
-
+**Kode JavaScript (Perhitungan):**
+```javascript
 function hitungNilaiAkhir(tugas, uts, uas) {
     return (tugas * 0.30) + (uts * 0.30) + (uas * 0.40);
 }
@@ -177,114 +208,123 @@ function tentukanPredikat(nilai) {
     if (nilai >= 50) return "D";
     return "E";
 }
+```
+
+**Hasil Pengujian 3 Skenario:**
+<br>
+![Skenario 1 - A](ss%20mini%20project.png)
+<br>
+![Skenario 2 - C](ss%20mini%20projectt.png)
+<br>
+![Skenario 3 - D](ss%20mini%20projecttt.png)
+
+<hr>
+
+## Eksperimen Mandiri
+
+Bagian ini memuat modifikasi dan pengembangan logika sesuai tantangan Modul.
+
+### 1. Operasi Aritmetika Melalui Prompt
+Mengubah fungsi dasar (Latihan 3) agar dapat menerima input dinamis langsung dari `prompt()`.
+
+**Hasil Tampilan:**
+<br>
+![Eksperimen 1](ss%201%20eks.png)
 
 
-Hasil Pengujian Skenario:
+### 8. Function Cek Genap
+Membuat fungsi `cekGenap(angka)` yang mengembalikan nilai Boolean (True/False).
 
-Skenario 1 (Lulus, Predikat A):
+**Hasil Tampilan:**
+<br>
+![Eksperimen 8](ss%208%20eks.png)
 
-Skenario 2 (Lulus, Predikat C):
 
-Skenario 3 (Belum Lulus, Predikat D):
+### 7. Perulangan Tabel Perkalian 7
+Menggunakan metode perulangan `for (let i = 1; i <= 10; i++)` untuk membangun tabel perkalian 7.
 
-Eksperimen Mandiri
+**Hasil Tampilan:**
+<br>
+![Eksperimen 7](ss%207%20eks.png)
 
-Bagian ini memuat hasil eksperimen pengembangan dari modul JavaScript dasar.
 
-1. Operasi Aritmetika Melalui Prompt
+### 9. Validasi Form Tidak Boleh Kosong
+Mencegah *submit* form kosong menggunakan `event.preventDefault()` dan deteksi spasi kosong.
 
-Mengubah Latihan 3 agar input angka dinamis diambil menggunakan fungsi prompt() kemudian dikonversi menjadi tipe data angka/number.
+**Hasil Tampilan (Error & Sukses):**
+<br>
+![Eksperimen 9 Error](ss%209%20x%20eks.png)
+<br>
+![Eksperimen 9 Sukses](ss%209%20eks.png)
 
-Hasil Tampilan:
 
-8. Function Cek Genap
+### 10. Modifikasi Menu Makanan
+Menambah lebih banyak opsi menu dan logika harga dari Latihan 8.
 
-Membuat sebuah fungsi cekGenap(angka) yang me-return boolean true apabila bilangan genap dan false jika bilangan ganjil.
+**Hasil Tampilan:**
+<br>
+![Eksperimen 10](ss%2010.png)
 
-Hasil Tampilan:
 
-7. Perulangan Tabel Perkalian 7
+### 11. Menyembunyikan dan Menampilkan Elemen
+Memanipulasi kelas CSS (classList.toggle) untuk menyembunyikan atau memunculkan elemen tanpa memuat ulang halaman.
 
-Penerapan sintaks perulangan for (let i = 1; i <= 10; i++) untuk memproduksi daftar/tabel perkalian angka 7 secara otomatis.
+**Hasil Tampilan (Sebelum dan Sesudah Disembunyikan):**
+<br>
+![Eksperimen 11 Muncul](ss%2011%20before%20eks.png)
+<br>
+![Eksperimen 11 Hilang](ss%2011%20after%20eks.png)
 
-Hasil Tampilan:
-
-9. Validasi Form Tidak Boleh Kosong
-
-Penerapan event onsubmit dan event.preventDefault() pada formulir. Jika nama hanya berisi spasi atau kosong, maka sistem memblokir pengiriman data dan menampilkan peringatan.
-
-Kondisi Form Kosong (Error):
-
-Kondisi Form Valid (Sukses):
-
-10. Modifikasi Menu Makanan
-
-Mengembangkan Latihan 8 dengan menambahkan lebih banyak opsi menu makanan dan variasi harganya ke dalam checkbox.
-
-Hasil Tampilan:
-
-11. Menyembunyikan & Menampilkan Elemen
-
-Demonstrasi manipulasi struktur HTML menggunakan JavaScript DOM (classList.toggle) untuk mengubah visibilitas CSS dari sebuah kotak div tanpa harus memuat ulang halaman.
-
-Tampilan Sebelum (Muncul):
-
-Tampilan Sesudah (Disembunyikan):
-
-Repository dikelola untuk pemenuhan tugas Praktikum Pemrograman Web Universitas Pelita Bangsa.
+<hr>
 
 ## H. Pertanyaan dan Tugas
 
 **1. Jelaskan perbedaan console.log(), alert(), prompt(), dan textContent/innerHTML.**
-*   `console.log()`: Berfungsi untuk mencetak pesan atau output data ke tab Console pada *developer tools* di browser, umumnya digunakan oleh *developer* untuk keperluan *debugging*.
-*   `alert()`: Berfungsi untuk memunculkan kotak dialog (pop-up) peringatan sederhana di layar browser yang hanya berisi pesan dan tombol "OK".
-*   `prompt()`: Berfungsi memunculkan kotak dialog yang meminta pengguna untuk memasukkan teks/inputan, dan mengembalikan nilai berupa *string*.
-*   `textContent` / `innerHTML`: Merupakan properti DOM. `textContent` digunakan untuk menyisipkan atau mengubah teks biasa secara aman, sedangkan `innerHTML` dapat memproses dan menyisipkan tag HTML di dalamnya.
+*   `console.log()`: Mencetak pesan/output ke tab Console pada *developer tools* browser (digunakan untuk *debugging*).
+*   `alert()`: Memunculkan kotak dialog (pop-up) peringatan di layar yang hanya berisi pesan dan tombol "OK".
+*   `prompt()`: Memunculkan kotak dialog yang meminta pengguna untuk menginputkan teks, dan me-return nilai berupa *string*.
+*   `textContent` / `innerHTML`: Properti DOM; `textContent` menyisipkan teks biasa secara aman, sedangkan `innerHTML` dapat memproses dan menyisipkan tag struktur HTML.
 
 **2. Apa perbedaan let dan const? Berikan contoh.**
-*   `let`: Digunakan untuk mendeklarasikan variabel yang nilainya bisa diubah (*reassign*) di kemudian hari.
-    *Contoh:* `let umur = 20; umur = 21;` (Sah)
-*   `const`: Digunakan untuk mendeklarasikan variabel konstanta yang nilainya tetap dan tidak bisa diubah setelah diinisialisasi pertama kali.
-    *Contoh:* `const phi = 3.14;` (Tidak bisa diubah menjadi 3.15)
+*   `let`: Digunakan untuk variabel yang nilainya bisa diubah (*reassign*) nanti. 
+    *Contoh:* `let umur = 20; umur = 21;`
+*   `const`: Digunakan untuk konstanta yang nilainya tetap dan tidak bisa diubah setelah pertama kali diisi. 
+    *Contoh:* `const phi = 3.14;`
 
 **3. Apa perbedaan operator == dan === ?**
-*   `==` (*Loose Equality*): Membandingkan dua nilai **hanya berdasarkan isinya**, tanpa memedulikan tipe datanya (melakukan konversi tipe secara otomatis). *Contoh:* `5 == "5"` akan menghasilkan `true`.
-*   `===` (*Strict Equality*): Membandingkan dua nilai secara ketat berdasarkan **isi dan tipe datanya**. *Contoh:* `5 === "5"` akan menghasilkan `false` karena tipe datanya berbeda (Number vs String).
+*   `==` (*Loose Equality*): Membandingkan dua nilai **hanya berdasarkan isinya**, dan otomatis menyamakan tipe datanya. (Contoh: `5 == "5"` adalah `true`).
+*   `===` (*Strict Equality*): Membandingkan secara ketat berdasarkan **isi dan tipe datanya**. (Contoh: `5 === "5"` adalah `false`).
 
 **4. Jelaskan fungsi if-else dan switch. Kapan masing-masing dapat digunakan?**
-*   `if-else`: Berfungsi untuk menyeleksi kondisi berdasarkan logika logis (rentang nilai, lebih besar/kecil, kondisi kompleks). Digunakan saat ada evaluasi *boolean* (*true/false*).
-*   `switch`: Berfungsi untuk memilih satu tindakan dari daftar kemungkinan nilai yang pasti (*exact match*). Sangat cocok digunakan untuk menggantikan `if-else` yang terlalu panjang saat mengevaluasi satu variabel dengan pilihan spesifik (misalnya: menu 1-5, hari Senin-Minggu).
+*   `if-else`: Untuk menyeleksi kondisi berdasarkan logika komparasi/rentang nilai (*boolean*). Cocok untuk kondisi yang kompleks.
+*   `switch`: Memilih satu tindakan dari opsi nilai yang sudah pasti (*exact match*). Cocok untuk menggantikan `if-else` bertumpuk saat mengevaluasi satu variabel spesifik (misal: menu pilihan 1-5).
 
 **5. Apa fungsi parameter dan return dalam function?**
-*   **Parameter:** Variabel yang diletakkan di dalam tanda kurung pada definisi fungsi untuk menampung data masukan (*input*) yang dikirim dari luar fungsi.
-*   **Return:** Instruksi untuk menghentikan eksekusi fungsi sekaligus mengembalikan nilai akhir (*output*) ke tempat fungsi tersebut dipanggil.
+*   **Parameter:** Variabel di dalam tanda kurung fungsi untuk menampung data masukan (*input*) dari luar.
+*   **Return:** Instruksi untuk menghentikan fungsi sekaligus mengembalikan/menghasilkan nilai akhir (*output*) ke tempat fungsi itu dipanggil.
 
 **6. Bagaimana JavaScript memilih elemen HTML menggunakan document.getElementById()?**
-JavaScript akan memindai keseluruhan struktur HTML (Document Object Model) dan mencari satu elemen yang memiliki atribut `id` persis seperti yang disebutkan di dalam kurung. Karena `id` bersifat unik dalam satu halaman, metode ini dijamin mengembalikan tepat satu elemen spesifik untuk dimanipulasi.
+Sistem memindai Document Object Model (DOM) HTML untuk mencari tepat satu elemen yang memiliki atribut `id` yang spesifik, lalu mengembalikannya agar dapat diubah atau dimanipulasi dengan skrip.
 
 **7. Buat script untuk memvalidasi form agar nama tidak kosong dan nilai berada pada rentang 0-100.**
-Berikut adalah script validasinya:
 ```javascript
 function validasiForm(event) {
-    event.preventDefault(); // Mencegah form memuat ulang halaman
+    event.preventDefault(); 
     
-    // Mengambil nilai dari elemen HTML (diasumsikan ID form-nya inputNama dan inputNilai)
     let nama = document.getElementById("inputNama").value;
     let nilai = Number(document.getElementById("inputNilai").value);
     
-    // Validasi Nama
     if (nama.trim() === "") {
         alert("Peringatan: Nama tidak boleh kosong!");
         return false;
     }
     
-    // Validasi Nilai (Rentang 0 - 100)
     if (isNaN(nilai) || nilai < 0 || nilai > 100) {
         alert("Peringatan: Nilai harus berada pada rentang 0 - 100!");
         return false;
     }
     
-    // Jika lolos validasi
-    alert("Berhasil! Data " + nama + " dengan nilai " + nilai + " valid.");
+    alert("Berhasil! Data valid.");
     return true;
 }
+```
