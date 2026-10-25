@@ -29,9 +29,9 @@ document.getElementById("pesan").textContent = "Hello World";
 console.log("Hello World");
 ```
 
-**Hasil Tampilan Halaman & Console:**
+**Hasil Tampilan Halaman:**
 <br>
-![Hasil Halaman] <img width="284" height="87" alt="ss 1" src="https://github.com/user-attachments/assets/ab4f1cb8-476c-4f3e-8d02-292cc4c56bd2" />
+<img width="284" height="87" alt="ss 1" src="https://github.com/user-attachments/assets/ab4f1cb8-476c-4f3e-8d02-292cc4c56bd2" />
 
 
 
@@ -51,13 +51,13 @@ if (namaPengguna && namaPengguna.trim() !== "") {
 
 **Hasil Tampilan:**
 <br>
-![Prompt Nama](<img width="329" height="149" alt="ss 2,1" src="https://github.com/user-attachments/assets/235051ee-c460-4f6b-8de4-c179dd0c8077" />
+![Prompt Nama] (<img width="329" height="149" alt="ss 2,1" src="https://github.com/user-attachments/assets/235051ee-c460-4f6b-8de4-c179dd0c8077" />
 )
 <br>
-![Alert Halo](<img width="330" height="109" alt="ss2,2" src="https://github.com/user-attachments/assets/93c46d41-218b-4886-a9c9-0b1c4aa10887" />
+![Alert Halo] (<img width="330" height="109" alt="ss2,2" src="https://github.com/user-attachments/assets/93c46d41-218b-4886-a9c9-0b1c4aa10887" />
 )
 <br>
-![Hasil Teks Halaman](<img width="245" height="78" alt="ss2,3" src="https://github.com/user-attachments/assets/fb8d620a-50ff-4566-9372-e9267001d060" />
+![Hasil Teks Halaman] (<img width="245" height="78" alt="ss2,3" src="https://github.com/user-attachments/assets/fb8d620a-50ff-4566-9372-e9267001d060" />
 )
 
 
