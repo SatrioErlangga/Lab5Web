@@ -31,8 +31,8 @@ console.log("Hello World");
 
 **Hasil Tampilan Halaman & Console:**
 <br>
-![Hasil Halaman](<img width="284" height="87" alt="ss 1" src="https://github.com/user-attachments/assets/ab4f1cb8-476c-4f3e-8d02-292cc4c56bd2" />
-)
+![Hasil Halaman] <img width="284" height="87" alt="ss 1" src="https://github.com/user-attachments/assets/ab4f1cb8-476c-4f3e-8d02-292cc4c56bd2" />
+
 
 
 ### Latihan 2: Alert dan Prompt
